@@ -9,7 +9,7 @@ print("Current working directory:", os.getcwd())
 data = pd.read_csv('data/iris.csv')
 
 # Preprocess data
-X = data.drop('Species', axis=1)
+X = data.drop('Id', 'Species', axis=1)
 y = data['Species']
 
 # Split data
