@@ -2,6 +2,8 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 import joblib
+import os
+print("Current working directory:", os.getcwd())
 
 # Load dataset
 data = pd.read_csv('../data/iris.csv')
