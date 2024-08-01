@@ -2,9 +2,11 @@ import pytest
 import joblib
 import pandas as pd
 
+
 def test_model_load():
     model = joblib.load('model/model.pkl')
     assert model is not None
+
 
 def test_model_prediction():
     model = joblib.load('model/model.pkl')
@@ -15,5 +17,7 @@ def test_model_prediction():
     prediction = model.predict(data)
     assert prediction[0] in ['setosa', 'versicolor', 'virginica']
 
+
 if __name__ == '__main__':
     pytest.main()
+
