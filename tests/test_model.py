@@ -9,7 +9,7 @@ def test_model_load():
 
 
 def test_model_prediction():
-    model = joblib.load('model/model.pkl')
+    model = joblib.load('model.pkl')
     data = pd.DataFrame(
         [[5.1, 3.5, 1.4, 0.2]],
         columns=['sepal_length', 'sepal_width', 'petal_length', 'petal_width']
