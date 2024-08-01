@@ -7,7 +7,7 @@ import joblib
 data = pd.read_csv('../data/iris.csv')
 
 # Preprocess data
-X = data.drop('Id','species', axis=1)
+X = data.drop('Id', 'species', axis=1)
 y = data['species']
 
 # Split data
