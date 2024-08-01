@@ -12,12 +12,8 @@ def test_model_prediction():
     model = joblib.load('model.pkl')
     data = pd.DataFrame(
         [[5.1, 3.5, 1.4, 0.2]],
-        columns=['SepalLengthCm', 
-                 'SepalWidthCm',
-                 'PetalLengthCm', 
-                 'PetalWidthCm'
-                 ]
-    )
+        columns=['SepalLengthCm','SepalWidthCm','PetalLengthCm', 'PetalWidthCm']
+     )
     prediction = model.predict(data)
     assert prediction[0] in ['setosa', 'versicolor', 'virginica']
 
