@@ -25,10 +25,11 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r app/requirements.txt
-        
-     - name: Train model
+        pip install pytest
+
+    - name: Train model
       run: |
-        python model/train.py    
+        python model/train.py
 
     - name: Lint with flake8
       run: |
@@ -37,7 +38,6 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pip install pytest
         pytest tests/
 
   deploy:
