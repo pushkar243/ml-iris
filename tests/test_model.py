@@ -20,7 +20,7 @@ def test_model_prediction():
         ]
     )
     prediction = model.predict(data)
-    assert prediction[0] in ['setosa', 'versicolor', 'virginica']
+    assert prediction[0] in ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
 
 
 if __name__ == '__main__':
