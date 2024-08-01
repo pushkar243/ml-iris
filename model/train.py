@@ -6,7 +6,7 @@ import os
 print("Current working directory:", os.getcwd())
 
 # Load dataset
-data = pd.read_csv('../data/iris.csv')
+data = pd.read_csv('data/iris.csv')
 
 # Preprocess data
 X = data.drop('species', axis=1)
