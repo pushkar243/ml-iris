@@ -33,6 +33,8 @@ Tasks:
 	•	Document the tuning process and the best parameters found.
 	2.	Model Packaging:
 	•	Package the best-performing model using tools like Docker and Flask.
+
+ #Writing a  comment to show a CI build when branch is merged 
 	•	Create a Dockerfile and a simple Flask application to serve the model.
 Deliverables:
 	•	A report on hyperparameter tuning results.
