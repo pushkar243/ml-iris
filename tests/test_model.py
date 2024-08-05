@@ -20,7 +20,8 @@ def test_model_prediction():
         ]
     )
     prediction = model.predict(data)
-    expected_labels = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
+    #expected_labels = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
+    expected_labels = [0, 1, 2]
     assert prediction[0] in expected_labels
 
 
